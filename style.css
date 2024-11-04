@@ -1,0 +1,196 @@
+body {
+    background: url(Assets/images/frosted_mint.jpg) lightgray 50% / cover no-repeat;
+}
+
+main {
+    margin: auto;
+    display: flex;
+    max-width: 1140px;
+    padding: 0px var(--spacing-8, 32px) var(--spacing-8, 32px) var(--spacing-8, 32px);
+    flex-direction: column;
+    gap: var(--spacing-8, 32px);
+    border-radius: 25px;
+    border: 1px solid var(--slate-300);
+    background: rgba(255, 255, 255, 0.40);
+    backdrop-filter: blur(10.67px);
+}
+
+.main--header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-5, 20px);
+    flex: 1 0 0;
+    align-self: stretch;
+    font-size: 1.125rem;
+
+}
+
+.main--header img {
+    width: 100px;
+    height: 100px;
+}
+
+.main--header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-5, 20px);
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.wrapper--btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-2, 8px);
+    align-self: stretch;
+
+}
+
+button {
+    all: unset;
+    font-size: 1.125rem;
+    cursor: pointer;
+    background: none;
+    display: flex;
+    padding: var(--spacing-2, 8px) var(--spacing-4, 16px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-2, 8px);
+    color: var(--sky-600);
+}
+
+.btn--secondary {
+    border-radius: var(--border-radius-lg, 8px);
+    border: 1px solid var(--sky-600, #0284C7);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.btn--tertiary {
+    border-radius: var(--border-radius-lg, 8px);
+}
+
+a:any-link {
+    text-decoration: none;
+    color: var(--sky-800);
+}
+
+.wrapper--location--bar {
+    position: relative;
+    width: fit-content;
+    align-self: center;
+}
+
+.wrapper--location--bar img {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+}
+
+#location--bar {
+    display: block;
+    color: var(--colors-sky-700, #0369A1);
+    min-width: 215px;
+    max-width: var(--max-width-xs, 320px);
+    padding: 8px 28px 8px 46px;
+    gap: var(--spacing-2, 8px);
+    border-radius: var(--border-radius-xl, 12px);
+    border: 2px solid var(--colors-slate-200, #E2E8F0);
+    background: var(--colors-slate-100, #F1F5F9);
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.15) inset, 0px -1px 3px 0px rgba(0, 0, 0, 0.15) inset;
+    font-size: 1.125rem;
+    transition: 0.4s border linear;
+}
+
+#location--bar:focus {
+    outline: none;
+    border-width: 2px;
+    border-color: var(--sky-700);
+}
+
+.catalogue--header {
+    width: 100%;
+    display: flex;
+    padding: 8px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container--filters {
+    display: flex;
+    padding: var(--spacing-2, 8px) var(--spacing-3, 12px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-1, 4px);
+}
+
+.container--cards {
+    margin-top: 2.5rem;
+    display: flex;
+    padding: var(--spacing-2, 8px);
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    row-gap: var(--spacing-2, 8px);
+    flex-wrap: wrap;
+}
+
+.card--car {
+    display: flex;
+    max-width: var(--max-width-xs, 320px);
+    padding: var(--spacing-5, 20px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-6, 24px);
+    border-radius: var(--border-radius-lg, 8px);
+    border: 1px solid var(--slate-300);
+    background: var(--slate-50);
+}
+
+.car--title {
+    font: 600 1.25rem/1.4 Inter, sans-serif;
+    color: var(--sky-800, #075985);
+
+    /* 140% */
+}
+
+.car--price {
+    color: var(--sky-700, #0369A1);
+    font: 500 1.5rem/1.16 Inter, sans-serif;
+    ;
+}
+
+.car--img {
+    width: 100%;
+    max-height: 12.5rem;
+    object-fit: fill;
+}
+
+.car--details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    row-gap: var(--spacing-3, 12px);
+    flex-wrap: wrap;
+}
+
+.car--details span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-1, 8px);
+    color: var(--colors-slate-800, #1E293B);
+    font: 400 1rem/1 "Inter", sans-serif;
+}
+
+.icon--container img {
+    opacity: 0.9;
+    width: 2rem;
+    height: 2rem;
+}
