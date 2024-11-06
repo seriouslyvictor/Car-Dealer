@@ -19,14 +19,22 @@ main {
 .main--title {
     font: var(--font--title);
     color: var(--sky-800);
+    letter-spacing: 1px;
 }
 
 .support--title {
     font: var(--font--support);
     color: var(--slate-800);
+    letter-spacing: 1px;
 }
 
-
+em {
+    font-weight: 900;
+    background: linear-gradient(90deg, #B91C1C 17.18%, #F97316 40.03%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 .main--header {
     display: flex;
@@ -205,4 +213,11 @@ a:any-link {
     opacity: 0.85;
     width: 1.75rem;
     height: 1.75rem;
+}
+
+.lexend-deca-title {
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
 }
