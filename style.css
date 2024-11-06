@@ -20,12 +20,14 @@ main {
     font: var(--font--title);
     color: var(--sky-800);
     letter-spacing: 1px;
+    margin-bottom: 0.5rem;
 }
 
 .support--title {
     font: var(--font--support);
-    color: var(--slate-800);
+    color: var(--slate-700);
     letter-spacing: 1px;
+    font-variant: small-caps;
 }
 
 em {
@@ -86,7 +88,7 @@ button {
 .btn--secondary {
     border-radius: var(--border-radius-lg, 8px);
     border: 1px solid var(--sky-600, #0284C7);
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 1px 3px hsla(0, 0%, 0%, 0.2);
 }
 
 .btn--tertiary {
@@ -119,16 +121,16 @@ a:any-link {
     padding: 8px 28px 8px 46px;
     gap: var(--spacing-2, 8px);
     border-radius: var(--border-radius-xl, 12px);
-    border: 2px solid var(--colors-slate-200, #E2E8F0);
+    border: 1px solid var(--colors-slate-200, #E2E8F0);
     background: var(--colors-slate-100, #F1F5F9);
-    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.15) inset, 0px -1px 3px 0px rgba(0, 0, 0, 0.15) inset;
+    box-shadow: 0 2px 0 hsla(0, 0%, 100%, 0.15),
+        inset 0 2px 2px hsla(0, 0%, 0%, 0.1);
     font-size: 1.125rem;
     transition: 0.4s border linear;
 }
 
 #location--bar:focus {
     outline: none;
-    border-width: 2px;
     border-color: var(--sky-700);
 }
 
