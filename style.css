@@ -190,7 +190,7 @@ a:any-link {
 }
 
 .icon--container img {
-    opacity: 0.9;
-    width: 2rem;
-    height: 2rem;
+    opacity: 0.85;
+    width: 1.75rem;
+    height: 1.75rem;
 }
